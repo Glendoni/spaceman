@@ -4,15 +4,26 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "install": "napa",
+    "napa": "napa",
     "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "modernizr": "modernizr -c modernizr-config.json -d src/modernizr.js",
+    "postinstall": "node ./node_modules/protractor/bin/webdriver-manager update",
     "postinstall": "ng build --aot -prod",
     "deploy": "git push origin master && git push heroku master"
   },
   "private": true,
+      "napa": {
+    "flot": "flot/flot#v0.8.3",
+    "jquery.flot.spline": "miloszfalinski/jquery.flot.spline",
+    "ika.jvectormap": "kakirigi/ika.jvectormap",
+    "sidebysideimproved": "pkoltermann/sidebysideimproved",
+    "nestable": "dbushell/Nestable"
+  },
   "dependencies": {
     "typescript": "~2.3.3",
     "@angular/animations": "^4.2.4",
