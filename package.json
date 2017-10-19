@@ -14,7 +14,7 @@
     "postinstall": "ng build --aot -prod",
     "deploy": "git push origin master && git push heroku master"
   },
-  "private": true,
+  "private": false,
   "napa": {
     "flot": "flot/flot#v0.8.3",
     "jquery.flot.spline": "miloszfalinski/jquery.flot.spline",
