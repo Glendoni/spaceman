@@ -4,7 +4,6 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "install": "napa",
     "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
@@ -14,7 +13,7 @@
     "postinstall": "ng build --aot -prod",
     "deploy": "git push origin master && git push heroku master"
   },
-  "private": false,
+  "private": true,
   "napa": {
     "flot": "flot/flot#v0.8.3",
     "jquery.flot.spline": "miloszfalinski/jquery.flot.spline",
